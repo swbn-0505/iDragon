@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body{
+    background-color: white;
+    overflow: hidden;
+}
+
+.gameContainer{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: 250vh 47vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.player{
+    background-image: url(man.png);
+    height: 233px;
+    background-repeat: no-repeat;   
+    position: absolute; 
+    left: 45vh; 
+    bottom: 0;
+    width: 100%; 
+}
+
+.dragon{
+    background-image: url(dragon.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute; 
+    left: 100vh; 
+    bottom: 0;
+    width: 100%;
+}
+
+.animatePlayer {
+    animation: jump 0.7s linear; 
+}
+
+.animateDragon{
+    animation: dragon 4s linear infinite;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0; 
+    }
+
+    50%{
+        bottom: 420px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes dragon {
+    0% {
+        left: 100%; 
+    }
+
+    100% {
+        left: -100px; 
+    }
+}
+
+.gameOver{
+    /* visibility: hidden; */
+    position: relative;
+    top: 15%;
+    left: 5%;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 700;
+    color: #191a6e;
+}
+
+#scoreCont{
+    position: absolute;
+    color: #d61f1f;
+    font-size: 3rem;
+    font-weight: bolder;
+    border: 5px solid #d61f1f;
+    border-radius: 25%;
+    width: 21vw;
+    top: 2vh;
+    left: 2vw;
+}
+
+.instructions{
+    position: absolute;
+    color: #f63c3c;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border: 5px solid #f63c3c;
+    border-radius: 20%;
+    width: 66vw;
+    top: 3vh;
+    left: 25vw;
+}
+
+.refresh-button {
+    visibility: hidden;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border: 5px solid #f63c3c;
+    border-radius: 15%;
+    width: 18vw;
+    top: 34vh;
+    left: 43vw;
+}
+
+.refresh-button:hover {
+    background-color: #2980b9;
+}
