@@ -6,6 +6,7 @@ iDragon Game ReadMe
 Welcome to iDragon Game, an exciting browser-based game where you control a character and try to avoid obstacles to score points. This README file provides essential information for users to understand and interact with the game successfully.
 
 
+
 Table of Contents
 
 
